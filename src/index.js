@@ -19,11 +19,14 @@ const FOOD_LIST = [
 ];
 
 (async function createDatabase() {
-  objs = FOOD_LIST.map((id) => {
-    return { img_id: id, yes: 0, no: 0 };
+  FOOD_LIST.forEach((food_id) => {
+    collection.count({ img_id: food_id }).then((c) => {
+      if (c == 0) {
+        console.log(`inserting ${food_id}`);
+        collection.insert({ img_id: food_id, yes: 0, no: 0 });
+      }
+    });
   });
-
-  await collection.insert(objs);
 })();
 
 const app = express();
