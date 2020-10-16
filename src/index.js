@@ -17,6 +17,7 @@ const FOOD_LIST = [
   "paocomovo",
   "cachorroquente",
   "empanada",
+  "tapioca",
 ];
 
 (async function createDatabase() {
