@@ -55,7 +55,7 @@ Então basta só alterar o código no frontend `src/front.js` para se conectar a
 ```JS
 function sendToServer() {
   alert("Aguarde um momento! Adicionando seu voto...");
-  fetch("https://localhost:5000", {
+  fetch("http://localhost:5000", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(answers),
