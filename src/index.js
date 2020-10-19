@@ -18,6 +18,7 @@ const FOOD_LIST = [
   "cachorroquente",
   "empanada",
   "tapioca",
+  "burrito",
 ];
 
 (async function createDatabase() {
