@@ -105,3 +105,22 @@ async function showResultsPage(stats) {
     b.appendChild(cellContent);
   });
 }
+
+function preloadImages() {
+  const imagesPath = Foods.map((image) => `${FoodPicsDir}/${image.filename}`);
+
+  function preload(url) {
+    const image = new Image();
+    image.src = url;
+    image.onload = () => {
+      imagesPath.shift();
+      if (imagesPath.length > 0){
+        preload(imagesPath[0]);
+      }
+    };
+  }
+
+  preload(imagesPath[0]);
+};
+
+preloadImages();
