@@ -1,3 +1,4 @@
+![sanduíche ou não](https://i.imgur.com/bI6VXQo.png)  
 # É um sanduíche ou não?
 
 Utilizando o poder do voto para solucionar o dilema se tal comida é ou não um **SANDUÍCHE**!
