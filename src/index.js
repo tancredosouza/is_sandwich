@@ -19,6 +19,7 @@ const FOOD_LIST = [
   "empanada",
   "tapioca",
   "Burrito",
+  "Taco",
 ];
 
 (async function createDatabase() {
