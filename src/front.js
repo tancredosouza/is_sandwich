@@ -14,6 +14,7 @@ const Foods = [
   { name: "Empanada", filename: "empanada.jpeg" },
   { name: "Tapioca", filename: "tapioca.jpg" },
   { name: "Burrito", filename: "Burrito.jpg" },
+  { name: "Taco", filename: "taco.jpg" },
   // Adicione na linha acima a nova comida que você
   // acha que é sanduíche (ou não) em formato:
   // { name: nome da comida, filename: nome do arquivo }
